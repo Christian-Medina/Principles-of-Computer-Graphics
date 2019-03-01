@@ -1,0 +1,12 @@
+language: cpp
+dist: trusty
+compiler: gcc
+addons:
+    apt:
+        sources:
+        - ubuntu-toolchain-r-test
+        packages:
+        - g++-4.9
+env: "CXX=g++-4.9"
+install: true
+script: make
